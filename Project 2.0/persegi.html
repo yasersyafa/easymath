@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <title>Luas Persegi</title>
+    <link rel="shortcut icon" href="gambar/logoorange.ico" type="image/x-icon">
+
+    <script type="text/javascript">
+        
+        function luas(){
+            sisi=document.getElementById("sisi").value;
+            luas=sisi*sisi;
+            ping="Masukkan angka!";
+            ping2="Harus positif!"
+            if (sisi >= 0) {
+                document.getElementById("hasil").value=luas;
+            } else if (sisi < 0) {
+                document.getElementById("hasil").value=ping2;
+            } else {
+                document.getElementById("hasil").value=ping;
+            }
+        }
+    </script>
+</head>
+<body>
+    <img src="gambar/math.png">
+    <div class="wrna"></div>
+    <div class="kotak">
+        <h2>Menghitung Luas
+            <br>
+            Persegi
+        </h2>
+        <table>
+            <tr>
+                <td>Sisi</td>
+            </tr>
+            <tr>
+                <td><input type="text" id="sisi"></td>
+            </tr>
+            <tr>
+                <td><button type="submit" value="hitung" onclick="luas()" id="jumlah">Hitung</button></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="hasil" disabled='true'></td>
+            </tr>
+         </table>
+    </div>
+        <nav>
+            <a href="easy.html">EASY MATH</a>
+
+            <ul>
+                <li><a href="lingkaran.html">Lingkaran</a></li>
+                <li><p>Persegi</p></li>
+                <li><a href="ppanjang.html">Persegi Panjang</a></li>
+                <li><a href="segitiga.html">Segitiga</a></li>  
+            </ul>
+        </nav>
+</body>
+</html>

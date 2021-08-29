@@ -1,0 +1,188 @@
+/* memngambil font eksternal */
+@font-face {
+    font-family: Asad;
+    src: url(KungFuMasterExpanded-X32x2.otf);
+}
+
+@font-face {
+    font-family: mont;
+    src: url(Mont-HeavyDEMO.otf);
+}
+/* tampilan body */
+body {
+    background-image: url(gambar/papan.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #262A32;
+}
+/* tampilan judul web */
+h1 {
+    font-family: asad;
+    text-align: center;
+    color: white;
+    font-size: 70px;
+    margin-top: 22px;
+}
+/* membuat kotak bagian lingkaran */
+.lingkaran {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    left: 14%;
+    top: 16%;
+    
+    background-color: #F0A30F;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    cursor: pointer;
+    -webkit-transition: background-color 0.8s;
+        transition: background-color 0.8s;
+}
+/* hover adalah efek suatu objek ketika cursor berada diatasnya */
+.lingkaran:hover {
+    background-color:#E765D2;
+}
+/* gambar lingkaran */
+.lingkaran img {
+    position: absolute;
+    width: 220px;
+    height: auto;
+    left: 20px;
+    top: 45px;
+}
+/* hyperlink lingkaran */
+.lingkaran a {
+    position: absolute;
+    width: 181px;
+    height: 45px;
+    left: 260px;
+    top: 140px;
+
+    font-size: 35px;
+    font-family: mont;
+    color: black;
+    text-decoration: none;
+}
+/* kotak bagian persegi */
+.persegi {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    left: 51%;
+    top: 16%;
+
+    background: #45C7D4;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+
+    cursor: pointer;
+    -webkit-transition: background-color 0.8s;
+        transition: background-color 0.8s;
+}
+/* mode hover */
+.persegi:hover {
+    background-color:#4496D2;
+}
+/* gambar persegi */
+.persegi img {
+    position: absolute;
+    width: 220px;
+    height: auto;
+    left: 20px;
+    top: 45px;
+}
+/* hyperlink persegi */
+.persegi a {
+    position: absolute;
+    width: 181px;
+    height: 45px;
+    left: 260px;
+    top: 140px;
+
+    font-size: 35px;
+    font-family: mont;
+    color: black;
+    text-decoration: none;
+}
+/* kotak bagian persegi panjang */
+.ppanjang {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    left: 14%;
+    top: 58%;
+
+    background: #4496D2;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+
+    cursor: pointer;
+    -webkit-transition: background-color 0.8s;
+        transition: background-color 0.8s;
+}
+/* mode hover */
+.ppanjang:hover {
+    background-color: #45C7D4;
+}
+/* gambar persegi panjang */
+.ppanjang img {
+    position: absolute;
+    width: 220px;
+    height: auto;
+    left: 20px;
+    top: 45px;
+}
+/* hyperlink persegi panjang */
+.ppanjang a {
+    position: absolute;
+    width: 181px;
+    height: 45px;
+    left: 260px;
+    top: 120px;
+
+    font-size: 35px;
+    font-family: mont;
+    color: black;
+    text-decoration: none;
+}
+     /*kotak segitiga */
+.segitiga {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    left: 51%;
+    top: 58%;
+
+    background: #E765D2;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+
+    cursor: pointer;
+    -webkit-transition: background-color 0.8s;
+        transition: background-color 0.8s;
+}
+/* mode hover */
+.segitiga:hover {
+    background-color: #F0A30F;
+}
+/* gambar segitiga */
+.segitiga img {
+    position: absolute;
+    width: 220px;
+    height: auto;
+    left: 20px;
+    top: 45px;
+}
+/* hyperlink segitiga */
+.segitiga a {
+    position: absolute;
+    width: 181px;
+    height: 45px;
+    left: 260px;
+    top: 140px;
+
+    font-size: 35px;
+    font-family: mont;
+    color: black;
+    text-decoration: none;
+}

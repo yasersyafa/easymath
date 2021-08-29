@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style4.css">
+    <title>Luas Persegi Panjang</title>
+    <link rel="shortcut icon" href="gambar/logoorange.ico" type="image/x-icon">
+
+    <script type="text/javascript">
+        
+        function pluas(){
+            panjang=document.getElementById("panjang").value;
+            lebar=document.getElementById("lebar").value;
+            pluas=panjang*lebar;
+            ping="Harus positif!"
+            ping2="Masukkan angka!"
+
+            if ((panjang >= 0) && (lebar >=0)) {
+                document.getElementById("hasil").value=pluas;
+            } else if ((panjang < 0) || (lebar < 0)) {
+                document.getElementById("hasil").value=ping;
+            } else {
+                document.getElementById("hasil").value=ping2;
+            }
+        }
+    </script>
+</head>
+<body>
+    <img src="gambar/math.png">
+    <div class="wrna"></div>
+    <div class="kotak">
+        <h2>Menghitung Luas
+            <br>
+            Persegi Panjang
+        </h2>
+        <table>
+            <tr>
+                <td>Panjang</td>
+            </tr>
+            <tr>
+                <td><input type="text" id="panjang"></td>
+            </tr>
+            <tr>
+                <td>Lebar</td>
+            </tr>
+            <tr>
+                <td><input type="text" id="lebar"></td>
+            </tr>
+            <tr>
+                <td><button type="submit" value="hitung" onclick="pluas()" id="jumlah">Hitung</button></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="hasil" disabled='true'></td>
+            </tr>
+         </table>
+    </div>
+        <nav>
+            <a href="easy.html">EASY MATH</a>
+
+            <ul>
+                <li><a href="lingkaran.html">Lingkaran</a></li>
+                <li><a href="persegi.html">Persegi</a></li>
+                <li><p>Persegi Panjang</p></li>
+                <li><a href="segitiga.html">Segitiga</a></li>  
+            </ul>
+        </nav>
+</body>
+</html>
